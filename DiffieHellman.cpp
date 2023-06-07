@@ -1,8 +1,5 @@
-#include <cmath>
-#include <iostream>
-
+#include <bits/stdc++.h>
 using namespace std;
-
 long long int power(long long int a, long long int b,long long int P)
 {
     if (b == 1)
@@ -10,7 +7,6 @@ long long int power(long long int a, long long int b,long long int P)
     else
         return (((long long int)pow(a, b)) % P);
 }
-
 int main()
 {
     long long int P, G, x, a, y, b, ka, kb;
