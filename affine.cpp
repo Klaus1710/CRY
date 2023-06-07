@@ -19,7 +19,6 @@ string affine_encrypt(string plain_text, int a, int b) {
     
     return encrypted_text;
 }
-
 string affine_decrypt(string cipher_text, int a, int b) {
     string alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     string decrypted_text = "";
@@ -31,7 +30,6 @@ string affine_decrypt(string cipher_text, int a, int b) {
             break;
         }
     }
-    
     for (char c : cipher_text) {
         if (isalpha(c)) {
             char uppercase_c = toupper(c);
@@ -43,7 +41,6 @@ string affine_decrypt(string cipher_text, int a, int b) {
             decrypted_text += c;
         }
     }
-    
     return decrypted_text;
 }
 
